@@ -248,6 +248,7 @@ def setMessageFields(String messageType) {
             status           : currentBuild.currentResult,
             test_guidance    : "''",
             username         : env.RSYNC_USER,
+            commit_stop      : env.last_commit_hash,
     ]
 
     // Add compose_url to appropriate message types
